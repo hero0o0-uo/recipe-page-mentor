@@ -1,0 +1,201 @@
+/* start of global rules */
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+
+  --Brown-800: hsl(14, 45%, 36%);
+
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--Stone-100);
+}
+
+.heading {
+  color: var(--Brown-800);
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+.space {
+  background-color: var(--Stone-150);
+  width: 100%;
+  height: 1.5px;
+  margin: 50px 0;
+}
+/* end of global rules */
+main {
+  background-color: white;
+  max-width: 46.875rem;
+  min-width: 21.875rem;
+  padding: 1.875rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+main header {
+  display: flex;
+  flex-direction: column;
+}
+
+main header img {
+  width: 100%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+main header h1 {
+  margin: 20px 0;
+  color: var(--Stone-900);
+  font-family: "Young Serif", serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+main header p {
+  margin: 0;
+  color: var(--Stone-600);
+  line-height: 150%;
+}
+
+main .preparation-time {
+  background-color: var(--Rose-50);
+  padding: 0.5rem 1rem;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+main .preparation-time h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--Rose-800);
+}
+
+main .preparation-time ul {
+  font-size: 13px;
+  padding: 0;
+  padding-left: 25px;
+}
+
+main .preparation-time li {
+  margin-bottom: 10px;
+  color: var(--Stone-600);
+  padding-left: 15px;
+}
+
+main .preparation-time li::marker {
+  color: var(--Rose-800);
+  font-size: 10px;
+}
+
+main .preparation-time li span {
+  font-weight: bold;
+  color: var(--Stone-600);
+}
+
+main .ingredients {
+  text-transform: capitalize;
+  margin: 40px 0;
+}
+
+main .ingredients ul {
+  padding: 0;
+  padding-left: 30px;
+}
+
+main .ingredients li {
+  padding-left: 20px;
+  color: var(--Stone-600);
+  margin-bottom: 10px;
+}
+
+main .ingredients li::marker {
+  color: var(--Brown-800);
+  font-size: 11px;
+}
+
+main .instructions {
+  color: var(--Stone-600);
+}
+
+main .instructions ul {
+  list-style: decimal;
+  padding-left: 30px;
+}
+
+main .instructions li {
+  margin-bottom: 10px;
+  line-height: 150%;
+  padding-left: 20px;
+}
+
+main .instructions li::marker {
+  color: var(--Brown-800);
+  font-weight: bold;
+}
+
+main .instructions li span {
+  font-weight: bold;
+}
+
+main .nutrition p {
+  color: var(--Stone-600);
+}
+
+main .nutrition table {
+  width: 100%;
+}
+
+main .nutrition table tr td {
+  border-bottom: 0.5px solid var(--Stone-150);
+  padding: 20px;
+}
+
+main .nutrition table tr:last-child td {
+  border-bottom: none;
+}
+
+main .nutrition table tr td:first-child {
+  color: var(--Stone-600);
+  text-transform: capitalize;
+}
+
+main .nutrition table tr td:last-child {
+  text-transform: capitalize;
+  color: var(--Brown-800);
+  font-weight: bold;
+}
